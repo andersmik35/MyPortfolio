@@ -1,0 +1,14 @@
+[
+  {
+    "title": "myPortfolio",
+    "description": "This is my portfolio",
+    "githubLink": "https://github.com/burgerflipper01/MyPortfolio",
+    "tags": ["HTML", "CSS", "JS", "React", "NextJS"]
+  },
+  {
+    "title": "LeetCode",
+    "description": "LeetCode solutions",
+    "githubLink": "https://github.com/burgerflipper01/Leetcode",
+    "tags": ["Java"]
+  }
+]
