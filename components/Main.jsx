@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -28,13 +27,13 @@ export default function Main() {
             <span id="greeting">{greet}</span>
           </h1>
           <h1 className=" py-2 text-gray-700 max-w-[70] m-auto">
-            I'm <span className="text-[#5651e5]"> Anders Mikkelsen,</span>
+            I&apos;m <span className="text-[#5651e5]"> Anders Mikkelsen,</span>
           </h1>
 
           <h1 className="py-2 text-gray-700">AP-CPSC student  </h1>
           <p className="py-4 text-gray-700 max-w-[70%] m-auto">
             {" "}
-            I'm currently taking an AP degree in Computer Science at Aarhus Business
+            I&apos;m currently taking an AP degree in Computer Science at Aarhus Business
           </p>
           <div className="flex items-center justify-between max-w-[500px] m-auto py-4">
           <a href = "https://www.linkedin.com/in/anders-mikkelsen-096a46258/" target="blank">

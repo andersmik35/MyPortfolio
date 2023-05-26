@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Image from "next/image";
 
@@ -26,12 +25,12 @@ export default function About() {
             <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md">
               <h2 class = "text-black">Udvikler</h2>
               <p class ="py-2 text-black">
-              Hello and welcome! My name is Anders Mikkelsen and i'm a {age}{" "}
+              Hello and welcome! My name is Anders Mikkelsen and i&apos;m a {age}{" "}
               year old boy who has profound a huge interest in programming in
-              the last year. I'm currently taking an AP-Degree in Computer
+              the last year. I&apos;m currently taking an AP-Degree in Computer
               Science at Aarhus business and currently on my 2nd term. My
               experience in programming is most found in Java and SQL as it is
-              the language we're tought at the moment. I've myself developed a
+              the language we&apos;re tought at the moment. I&apos;ve myself developed a
               interest in Web-Development and use my spare time on this.
               </p>
             </div>
