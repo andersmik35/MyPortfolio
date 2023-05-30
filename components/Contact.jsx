@@ -18,7 +18,7 @@ export default function Contact() {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
-                <img
+                <img alt="Contact"
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbnRhY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
                 />

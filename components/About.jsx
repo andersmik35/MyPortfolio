@@ -47,7 +47,7 @@ export default function About() {
           </div>
         </div>
         <div class="w-full h-auto m-auto rounded-xl flex items-center justify-center">
-          <Image alt = "Logo" width= "500" height = "500" className="rounded-l" src="/../public/assets/images/about.jpg"/>
+          <Image alt = "Logo" width= "500" height = "500" className="rounded-l" src="/assets/images/about.jpg"/>
         </div>
       </div>
     </div>
