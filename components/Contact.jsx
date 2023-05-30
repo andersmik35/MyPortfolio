@@ -1,11 +1,37 @@
-import React from "react";
+"use client";
+import React, {useState} from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import Link from "next/link";
+
+
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  function sendMail(e) {
+    e.preventDefault();
+    var message = formData.message;
+    const phoneAndName = formData.phone + " " + formData.name;
+  
+    message += phoneAndName;
+  
+    window.open(
+      "mailto:ande077h@gmail.com" +
+        "?subject=" +
+        formData.subject +
+        "&body=" +
+        message
+    );
+  }
+
   return (
     <div id="contact" className="w-full flex items-center">
       <div className="max-w-[1240px] m-auto px-2 py-20 w-full">
@@ -18,7 +44,8 @@ export default function Contact() {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
-                <img alt="Contact"
+                <img
+                  alt="Contact"
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNvbnRhY3R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
                 />
@@ -59,7 +86,7 @@ export default function Contact() {
           {/** Right divider*/}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form action="/" method="POST" encType="multipart/form-data">
+              <form onSubmit={sendMail}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
@@ -67,6 +94,11 @@ export default function Contact() {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
+                      id="name"
+                      value={formData.name}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                     />
                   </div>
                   <div className="flex flex-col">
@@ -77,6 +109,11 @@ export default function Contact() {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="phone"
+                      id="phone"
+                      value={formData.phone}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                     />
                   </div>
                 </div>
@@ -86,6 +123,11 @@ export default function Contact() {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -94,6 +136,11 @@ export default function Contact() {
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
+                    id="subject"
+                    value={formData.subject}
+                    onChange={(e) =>
+                      setFormData({ ...formData, subject: e.target.value })
+                    }
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -102,9 +149,14 @@ export default function Contact() {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                     name="message"
+                    id="message"
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
+                <button className="w-full p-4 bg-[#5651e5] text-gray-100 mt-4" type="submit">
                   Send Message
                 </button>
               </form>
