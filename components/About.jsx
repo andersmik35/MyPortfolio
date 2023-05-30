@@ -17,13 +17,13 @@ export default function About() {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div class = "col-span-2">
           <p class = "uppercase text-xl tracking-widest text-[#5651e5]"></p>
-          <h2 class = "text-black py-4">Who am i?</h2>
-          <div class = "bg-white-800 border border-gray-300 py-2 text-black px-6 rounded-md font-mono">
-            Hey i am Anders a programmer
+          <p class = "text-[#5651e5] py-4 text-xl uppercase tracking-widest">Who am i?</p>
+          <div class = "bg-white-800 border border-gray-300 py-2 text-black px-6 rounded-md font-mono shadow-l">
+            Hey, you&apos;re probably wondering who i am? Well, let me tell you.
           </div>
           <div class="flex flex-row w-auto text-gray-400 py-4 gap-4">
-            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md shadow-xl">
-              <h2 class = "text-black">Udvikler</h2>
+            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md shadow-l">
+              <h2 class = "text-black">Developer</h2>
               <p class ="py-2 text-black">
               Hello and welcome! My name is Anders Mikkelsen and i&apos;m a {age}{" "}
               year old boy who has profound a huge interest in programming in
@@ -34,7 +34,7 @@ export default function About() {
               interest in Web-Development and use my spare time on this.
               </p>
             </div>
-            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md">
+            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md shadow-l">
               <h2 class ="text-black"> Personal</h2>
                 <p class ="py-2 text-black">
                 In addition to the theoretical and practical skills I have
@@ -46,7 +46,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div class="w-full h-auto m-auto rounded-xl flex items-center justify-center shadow-xl">
+        <div class="w-full h-auto m-auto rounded-xl flex items-center justify-center shadow-l">
           <Image alt = "Logo" width= "500" height = "500" className="rounded-l" src="/assets/images/about.jpg"/>
         </div>
       </div>
