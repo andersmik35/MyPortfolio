@@ -22,7 +22,7 @@ export default function About() {
             Hey i am Anders a programmer
           </div>
           <div class="flex flex-row w-auto text-gray-400 py-4 gap-4">
-            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md">
+            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md shadow-xl">
               <h2 class = "text-black">Udvikler</h2>
               <p class ="py-2 text-black">
               Hello and welcome! My name is Anders Mikkelsen and i&apos;m a {age}{" "}
@@ -46,7 +46,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div class="w-full h-auto m-auto rounded-xl flex items-center justify-center">
+        <div class="w-full h-auto m-auto rounded-xl flex items-center justify-center shadow-xl">
           <Image alt = "Logo" width= "500" height = "500" className="rounded-l" src="/assets/images/about.jpg"/>
         </div>
       </div>
