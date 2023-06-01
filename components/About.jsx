@@ -18,11 +18,11 @@ export default function About() {
         <div class = "col-span-2">
           <p class = "uppercase text-xl tracking-widest text-[#5651e5]"></p>
           <p class = "text-[#5651e5] py-4 text-xl uppercase tracking-widest">Who am i?</p>
-          <div class = "bg-white-800 border border-gray-300 py-2 text-black px-6 rounded-md font-mono shadow-l">
+          <div class = "bg-white-800 border border-gray-300 py-2 text-black px-6 rounded-md font-mono shadow-lg">
             Hey, you&apos;re probably wondering who i am? Well, let me tell you.
           </div>
           <div class="flex flex-row w-auto text-gray-400 py-4 gap-4">
-            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md shadow-l">
+            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md shadow-lg">
               <h2 class = "text-black">Developer</h2>
               <p class ="py-2 text-black">
               Hello and welcome! My name is Anders Mikkelsen and i&apos;m a {age}{" "}
@@ -34,7 +34,7 @@ export default function About() {
               interest in Web-Development and use my spare time on this.
               </p>
             </div>
-            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md shadow-l">
+            <div class="bg-white-800 border border-gray-300 flex-col p-4 rounded-md shadow-lg">
               <h2 class ="text-black"> Personal</h2>
                 <p class ="py-2 text-black">
                 In addition to the theoretical and practical skills I have
@@ -46,7 +46,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div class="w-full h-auto m-auto rounded-xl flex items-center justify-center shadow-l">
+        <div class="w-full h-auto m-auto rounded-xl flex items-center justify-center shadow-lg">
           <Image alt = "Logo" width= "500" height = "500" className="rounded-l" src="/assets/images/about.jpg"/>
         </div>
       </div>

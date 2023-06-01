@@ -36,19 +36,22 @@ export default function Main() {
             I&apos;m currently taking an AP degree in Computer Science at Aarhus Business
           </p>
           <div className="flex items-center justify-between max-w-[500px] m-auto py-4">
-          <a href = "https://www.linkedin.com/in/anders-mikkelsen-096a46258/" target="blank">
+          <a href = "https://www.linkedin.com/in/anders-mikkelsen-096a46258/" target="_blank">
             <LinkIcon icon={
               <FaLinkedinIn size={25}/>
             }/>
             </a>
-          <a href="https://github.com/burgerflipper01" target="blank">
+          <a href="https://github.com/burgerflipper01" target="_blank">
             <LinkIcon icon={
               <FaGithub size={25} />
             }/>
             </a>
+            <a class ="button-link" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=ande077h@gmail.com" target="_blank">
             <LinkIcon icon={
               <AiOutlineMail size={25} />
+              
             }/>
+            </a>
             <LinkIcon icon={
               <BsFillPersonLinesFill size={25} />
             }/>

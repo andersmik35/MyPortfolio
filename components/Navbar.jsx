@@ -51,9 +51,6 @@ export default function Navbar() {
                 Projects
               </li>
             </a>
-            <a href="#contact">
-              <li className="ml-10 text-l uppercase hover:border-b">Contact</li>
-            </a>
           </ul>
           <div className="flex justify-center">
             <div onClick={handleNav} className="md:hidden items-center">
@@ -110,11 +107,6 @@ export default function Navbar() {
               <a href="#projects">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Projects
-                </li>
-              </a>
-              <a href="#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
                 </li>
               </a>
             </ul>
