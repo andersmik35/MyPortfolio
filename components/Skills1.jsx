@@ -36,7 +36,7 @@ export default function Skills() {
                 ></Image>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>MySQL</h3>
+                <h3>SQL</h3>
               </div>
             </div>
           </div>
