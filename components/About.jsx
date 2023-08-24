@@ -27,8 +27,8 @@ export default function About() {
               <p class ="py-2 text-black">
               Hello and welcome! My name is Anders Mikkelsen and i&apos;m a {age}{" "}
               year old boy who has profound a huge interest in programming in
-              the last year. I&apos;m currently taking an AP-Degree in Computer
-              Science at Aarhus business and currently on my 2nd term. My
+              the last few years. I&apos;m currently taking an AP-Degree in Computer
+              Science at Aarhus business and currently on my 3rd term. My
               experience in programming is most found in Java and SQL as it is
               the language we&apos;re tought at the moment. I&apos;ve myself developed a
               interest in Web-Development and use my spare time on this.
