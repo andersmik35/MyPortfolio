@@ -10,5 +10,17 @@
     "description": "LeetCode solutions",
     "githubLink": "https://github.com/burgerflipper01/Leetcode",
     "tags": ["Java"]
+  },
+  {
+    "title": "NetworkGame",
+    "description": "Java network game",
+    "githubLink": "https://github.com/burgerflipper01/NetworkGame",
+    "tags": ["Java"]
+  }
+  {
+    "title": "YatzyProject",
+    "description": "A webbased Yatzy game",
+    "githubLink": "https://github.com/GustavHaavik/YatzyProjekt",
+    "tags": ["HTML", "CSS", "JS"]
   }
 ]
